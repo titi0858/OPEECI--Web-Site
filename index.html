@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>OPEECI - Association des Parents d'Élèves et Étudiants de Côte d'Ivoire</title>
+<meta content="association, parents d'élèves, étudiants, Côte d'Ivoire" name="keywords">
+<meta content="Site officiel de l'OPEECI, l'Association des Parents d'Élèves et Étudiants de Côte d'Ivoire" name="description">
+
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only"></span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+<!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg bg-white navbar-light shadow border-top border-5 border-primary sticky-top p-0">
+    <a href="index.html" class="navbar-brand bg-primary d-flex align-items-center px-4 px-lg-5">
+        <!-- Logo Image -->
+        <img src="img/opeeci.jpg" alt="Logo" style="height: 60px; margin-right: 10px;"> <!-- Adjust the src and size accordingly -->
+        <h2 class="mb-2 text-white">OPEECI</h2>
+    </a>
+    <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto p-4 p-lg-0">
+            <a href="index.html" class="nav-item nav-link active">Accueil</a>
+
+            <div class="nav-item dropdown">
+                <a href="vision.html" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    QU'EST CE QUE L'OPEECI?</a>
+                <div class="dropdown-menu fade-up m-0" aria-labelledby="navbarDropdown">
+                    <a href="vision.html#vision" class="dropdown-item">Notre vision</a>
+                    <a href="vision.html#mission" class="dropdown-item">Notre mission</a>
+                    <a href="vision.html#valeur" class="dropdown-item">Nos valeurs</a>
+                    <a href="vision.html#organisation" class="dropdown-item">Notre organisation</a>
+                </div>
+            </div>
+            <a href="service.html" class="nav-item nav-link">Activités</a>
+            <form class="d-flex ms-3 me-3" role="search" action="search_results.html" method="GET">
+                <input class="form-control me-2" type="search" name="query" placeholder="Rechercher des sections" aria-label="Search" style="width: 228px; height: 35px; border-radius: 15px; margin-top: 18px;">
+                
+                <button class="btn btn-outline-success" type="submit" style="border-radius: 15px; padding: 2px 10px; height: 30px; margin-top: 22px;">
+                    <i class="bi bi-search"></i>
+                </button>
+            </form>
+            <a href="contact.html" class="nav-item nav-link">Contact</a>
+        </div>
+        <div class="d-flex pt-2 navbar-social ">
+            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+            <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/Aka.claude12?mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+</nav>
+<!-- Navbar End -->
+ <!-- Début du Flash Info -->
+<div class="news-ticker bg-light py-2">
+    <div class="container d-flex align-items-center">
+        <div class="ticker-title text-white bg-success px-3 py-1 me-3">FLASH INFO</div>
+        <marquee class="ticker-content d-flex align-items-center" behavior="scroll" direction="left" scrollamount="6">
+            <span class="text-success mx-3">📢 Bonne rentrée scolaire à tous les parents d'élèves! " soyons des citoyens responsables pour une école de qualité</span>
+            <span class="text-warning mx-3">🎓 Rejoignez nos ateliers éducatifs pour l'année scolaire 2024 !</span>
+            <span class="text-danger mx-3">🚨 Important : Assemblée Générale des Parents prévue le 15 Septembre.</span>
+        </marquee>
+    </div>
+</div>
+<!-- Fin du Flash Info -->
+
+<!-- Carousel Start -->
+<div class="container-fluid p-0 pb-5">
+    <div class="owl-carousel header-carousel position-relative mb-5">
+        <div class="owl-carousel-item position-relative">
+            <img class="img-fluid" src="img/couverture.jpg" alt="">
+            <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(6, 3, 21, .5);">
+                <div class="container">
+                    <div class="row justify-content-start">
+                        <div class="col-10 col-lg-8">
+                            <h5 class="text-white text-uppercase mb-3 animated slideInDown">Pour les Parents et Étudiants</h5>
+                            <h1 class="display-3 text-white animated slideInDown mb-4">Renforcer les <span class="text-primary">Liens Éducatifs</span></h1>
+                            <p class="fs-5 fw-medium text-white mb-4 pb-2">Notre mission est de soutenir l'éducation et de favoriser une meilleure collaboration entre les familles et le système éducatif en Côte d'Ivoire.</p>
+                            <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">En savoir plus</a>
+                            <a href="" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Devenir Membre</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="owl-carousel-item position-relative">
+            <img class="img-fluid" src="img/carousel-2.jpg" alt="">
+            <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(6, 3, 21, .5);">
+                <div class="container">
+                    <div class="row justify-content-start">
+                        <div class="col-10 col-lg-8">
+                            <h5 class="text-white text-uppercase mb-3 animated slideInDown">Engagement Communautaire</h5>
+                            <h1 class="display-3 text-white animated slideInDown mb-4">Unir les <span class="text-primary">Familles</span> et les Écoles</h1>
+                            <p class="fs-5 fw-medium text-white mb-4 pb-2">Participez à nos événements et ateliers pour renforcer les liens entre les parents, les élèves et les enseignants.</p>
+                            <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Découvrir Plus</a>
+                            <a href="" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Nous Rejoindre</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Carousel End -->
+
+<!-- About Start -->
+<div class="container-fluid overflow-hidden py-5 px-lg-0 " style="margin-top: -50px">
+    <div class="container about py-5 px-lg-0">
+        <div class="row g-5 mx-lg-0">
+            <div class="col-lg-6 ps-lg-0 wow fadeInLeft" data-wow-delay="0.1s" style="min-height: 400px; min-width: 400px;">
+                <div class="position-relative h-100 ps-3">
+                    <img class="position-absolute img-fluid w-400 h-400" src="img/accueil1.jpeg" style="object-fit: cover;" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6 about-text wow fadeInUp" data-wow-delay="0.3s">
+                <h6 class="text-secondary text-uppercase mb-3">À propos de nous</h6>
+                <h1 class="mb-5">Renforcer l'Éducation et l'Engagement Communautaire</h1>
+                <p class="mb-5">L'OPEECI est une organisation dédiée à soutenir les parents d'élèves et les étudiants en Côte d'Ivoire. Nous travaillons ensemble pour améliorer l'éducation et promouvoir une meilleure collaboration entre les familles et les écoles.</p>
+                <div class="row g-4 mb-5">
+                    <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                        <i class="fa fa-users fa-3x text-primary mb-3"></i>
+                        <h5>Communauté Solidaire</h5>
+                        <p class="m-0">Nous créons un réseau de soutien fort pour les parents et les étudiants.</p>
+                    </div>
+                    <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
+                        <i class="fa fa-book fa-3x text-primary mb-3"></i>
+                        <h5>Éducation de Qualité</h5>
+                        <p class="m-0">Encourager la réussite scolaire à travers des initiatives éducatives.</p>
+                    </div>
+                </div>
+                <a href="" class="btn btn-primary py-3 px-5">En savoir plus</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About End -->
+
+
+<!-- Activités Start -->
+<div class="container-xxl py-5" style="margin-top: -50px" >
+    <div class="container py-5">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h6 class="text-secondary text-uppercase">Nos Activités</h6>
+            <h1 class="mb-5">Découvrez Nos Initiatives</h1>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="service-item p-4">
+                    <div class="overflow-hidden mb-4">
+                        <img class="img-fluid" src="img/acceuilsoutien.jpeg" alt="Soutien Scolaire">
+                    </div>
+                    <h4 class="mb-3">Soutien Scolaire</h4>
+                    <p>Des séances d'aide aux devoirs et de tutorat pour améliorer les performances académiques des élèves.</p>
+                    <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>En savoir plus</span></a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="service-item p-4">
+                    <div class="overflow-hidden mb-4">
+                        <img class="img-fluid" src="img/acceuilconf1.jpg" alt="Conférences et Ateliers">
+                    </div>
+                    <h4 class="mb-3">Conférences et Ateliers</h4>
+                    <p>Des événements éducatifs pour discuter des défis de l'éducation et trouver des solutions innovantes.</p>
+                    <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>En savoir plus</span></a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.7s">
+                <div class="service-item p-4">
+                    <div class="overflow-hidden mb-4">
+                        <img class="img-fluid" src="img/acceuilcomuno.jpeg" alt="Événements Communautaires">
+                    </div>
+                    <h4 class="mb-3">Événements Communautaires</h4>
+                    <p>Organisation d'événements pour renforcer la cohésion sociale et l'engagement communautaire.</p>
+                    <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>En savoir plus</span></a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="service-item p-4">
+                    <div class="overflow-hidden mb-4">
+                        <img class="img-fluid" src="img/accueilpsy.jpg" alt="Aide Psychosociale">
+                    </div>
+                    <h4 class="mb-3">Aide Psychosociale</h4>
+                    <p>Support et conseils pour les parents et les étudiants afin de mieux gérer les défis personnels et scolaires.</p>
+                    <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>En savoir plus</span></a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="service-item p-4">
+                    <div class="overflow-hidden mb-4">
+                        <img class="img-fluid" src="img/accueilpart.jpeg" alt="Partenariats Educatifs">
+                    </div>
+                    <h4 class="mb-3">Partenariats Éducatifs</h4>
+                    <p>Collaboration avec les écoles, les enseignants et d'autres partenaires pour améliorer l'éducation.</p>
+                    <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>En savoir plus</span></a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.7s">
+                <div class="service-item p-4">
+                    <div class="overflow-hidden mb-4">
+                        <img class="img-fluid" src="img/accueilmentor.webp" alt="Programme de Mentorat">
+                    </div>
+                    <h4 class="mb-3">Programme de Mentorat</h4>
+                    <p>Encadrement des jeunes par des mentors pour les guider dans leurs choix académiques et professionnels.</p>
+                    <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>En savoir plus</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Activités End -->
+
+<!-- Fact Start -->
+<div class="container-xxl py-5" style="margin-top: -50px">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="text-secondary text-uppercase mb-3">Quelques faits</h6>
+                <h1 class="mb-5">L'OPEECI : Un Engagement au Cœur de la Communauté</h1>
+                <p class="mb-5">Depuis notre création, nous avons soutenu de nombreux parents et étudiants à travers des programmes éducatifs, des événements communautaires, et des ateliers pratiques.</p>
+                <div class="d-flex align-items-center">
+                    <i class="fa fa-headphones fa-2x flex-shrink-0 bg-primary p-3 text-white"></i>
+                    <div class="ps-4">
+                        <h6>Contactez-nous pour toute question !</h6>
+                        <h3 class="text-primary m-0">+225 00 00 00 00</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="row g-4 align-items-center">
+                    <div class="col-sm-6">
+                        <div class="bg-primary p-4 mb-4 wow fadeIn" data-wow-delay="0.3s">
+                            <i class="fa fa-heart fa-2x text-white mb-3"></i>
+                            <h2 class="text-white mb-2" data-toggle="counter-up">596</h2>
+                            <p class="text-white mb-0">Familles Soutenues</p>
+                        </div>
+                        <div class="bg-secondary p-4 wow fadeIn" data-wow-delay="0.5s">
+                            <i class="fa fa-users fa-2x text-white mb-3"></i>
+                            <h2 class="text-white mb-2" data-toggle="counter-up">388</h2>
+                            <p class="text-white mb-0">Événements Organisés</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="bg-success p-4 wow fadeIn" data-wow-delay="0.7s">
+                            <i class="fa fa-smile fa-2x text-white mb-3"></i>
+                            <h2 class="text-white mb-2" data-toggle="counter-up">1025</h2>
+                            <p class="text-white mb-0">Participants Heureux</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Fact End -->
+
+
+<!-- Feature Start -->
+<div class="container-fluid overflow-hidden py-5 px-lg-0" style="margin-top: -50px">
+    <div class="container feature py-5 px-lg-0">
+        <div class="row g-5 mx-lg-0">
+            <div class="col-lg-6 feature-text wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="text-secondary text-uppercase mb-3">Nos Objectifs</h6>
+                <h1 class="mb-5">Nous Agissons pour l'Éducation et la Cohésion Sociale</h1>
+                <div class="d-flex mb-5 wow fadeInUp" data-wow-delay="0.3s">
+                    <i class="fa fa-users text-primary fa-3x flex-shrink-0"></i>
+                    <div class="ms-4">
+                        <h5>Renforcement Communautaire</h5>
+                        <p class="mb-0">Nous réunissons les parents et les enseignants pour soutenir la réussite scolaire des enfants.</p>
+                    </div>
+                </div>
+                <div class="d-flex mb-5 wow fadeIn" data-wow-delay="0.5s">
+                    <i class="fa fa-book text-primary fa-3x flex-shrink-0"></i>
+                    <div class="ms-4">
+                        <h5>Initiatives Éducatives</h5>
+                        <p class="mb-0">Organisation d'ateliers et de formations pour les parents et les étudiants afin d'encourager la réussite scolaire.</p>
+                    </div>
+                </div>
+                <div class="d-flex mb-0 wow fadeInUp" data-wow-delay="0.7s">
+                    <i class="fa fa-hands-helping text-primary fa-3x flex-shrink-0"></i>
+                    <div class="ms-4">
+                        <h5>Support et Assistance</h5>
+                        <p class="mb-0">Aide personnalisée et écoute active pour répondre aux besoins des familles et des étudiants.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 pe-lg-0 wow fadeInRight" data-wow-delay="0.1s" style="min-height: 400px;">
+                <div class="position-relative h-100">
+                    <img class="position-absolute img-fluid w-100 h-100" src="img/accueilobjectif.avif" style="object-fit: cover;" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Feature End -->
+
+
+
+<!-- Contact Start -->
+<div class="container-xxl py-5" style="margin-top: -50px">
+    <div class="container py-5">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="text-secondary text-uppercase mb-3">Contactez-nous</h6>
+                <h1 class="mb-5">Demandez Plus d'Informations !</h1>
+                <p class="mb-5">Si vous avez des questions ou souhaitez en savoir plus sur nos activités, n'hésitez pas à nous contacter. Nous sommes là pour vous aider et vous fournir toutes les informations nécessaires.</p>
+                <div class="d-flex align-items-center">
+                    <i class="fa fa-headphones fa-2x flex-shrink-0 bg-primary p-3 text-white"></i>
+                    <div class="ps-4">
+                        <h6>Appelez pour toute question !</h6>
+                        <h3 class="text-primary m-0">+225 00 00 00 00</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="bg-light text-center p-5 wow fadeIn" data-wow-delay="0.5s">
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-12 col-sm-6">
+                                <input type="text" class="form-control border-0" placeholder="Votre Nom" style="height: 55px;">
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <input type="email" class="form-control border-0" placeholder="Votre Email" style="height: 55px;">
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <input type="number" class="form-control border-0" placeholder="Votre Téléphone" style="height: 55px;">
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <select class="form-select border-0" style="height: 55px;">
+                                    <option selected>Choisissez un sujet</option>
+                                    <option value="1">Adhésion</option>
+                                    <option value="2">Activités</option>
+                                    <option value="3">Partenariat</option>
+                                    <option value="4">Autres</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <textarea class="form-control border-0" placeholder="Votre Message"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary w-100 py-3" type="submit">Envoyer</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Contact End -->
+
+
+    <!-- Adhésion Start -->
+<div class="container-xxl py-5" style="margin-top: -50px">
+    <div class="container py-5">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h6 class="text-secondary text-uppercase">Adhésion et Participation</h6>
+            <h1 class="mb-5">Rejoignez-nous et Faites la Différence</h1>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="price-item">
+                    <div class="border-bottom p-4 mb-4">
+                        <h5 class="text-primary mb-1">Membre Actif</h5>
+                    </div>
+                    <div class="p-4 pt-0">
+                        <p><i class="fa fa-check text-success me-3"></i>Participation aux réunions et décisions</p>
+                        <p><i class="fa fa-check text-success me-3"></i>Accès aux ateliers et formations</p>
+                        <p><i class="fa fa-check text-success me-3"></i>Possibilité d'organiser des événements</p>
+                        <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Rejoignez-nous</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="price-item">
+                    <div class="border-bottom p-4 mb-4">
+                        <h5 class="text-primary mb-1">Volontaire</h5>
+                    </div>
+                    <div class="p-4 pt-0">
+                        <p><i class="fa fa-check text-success me-3"></i>Soutien aux événements et activités</p>
+                        <p><i class="fa fa-check text-success me-3"></i>Encadrement des jeunes et des étudiants</p>
+                        <p><i class="fa fa-check text-success me-3"></i>Participation aux initiatives locales</p>
+                        <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Devenir Volontaire</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.7s">
+                <div class="price-item">
+                    <div class="border-bottom p-4 mb-4">
+                        <h5 class="text-primary mb-1">Partenaire</h5>
+                    </div>
+                    <div class="p-4 pt-0">
+                        <p><i class="fa fa-check text-success me-3"></i>Collaboration pour des projets éducatifs</p>
+                        <p><i class="fa fa-check text-success me-3"></i>Soutien matériel et logistique</p>
+                        <p><i class="fa fa-check text-success me-3"></i>Visibilité lors de nos événements</p>
+                        <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Nous Soutenir</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Adhésion End -->
+
+
+<!-- Équipe Start -->
+<div class="container-xxl py-5" style="margin-top: -50px">
+    <div class="container py-5">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h6 class="text-secondary text-uppercase">Notre Équipe</h6>
+            <h1 class="mb-5">Les Membres Clés de l'OPEECI</h1>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="team-item p-4">
+                    <div class="overflow-hidden mb-4">
+                        <img class="img-fluid" src="img/accueilpresi.jpeg" alt="Président de l'OPEECI">
+                    </div>
+                    <h5 class="mb-0"> Monsieur AKa Claude</h5>
+                    <p>Président actuel de l'OPEECI </p>
+                    <div class="btn-slide mt-1">
+                        <i class="fa fa-share"></i>
+                        <span>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="team-item p-4">
+                    <div class="overflow-hidden mb-4">
+                        <img class="img-fluid" src="img/team-2.jpg" alt="Vice-Président de l'OPEECI">
+                    </div>
+                    <h5 class="mb-0">Nom du Vice-Président</h5>
+                    <p>Vice-Président</p>
+                    <div class="btn-slide mt-1">
+                        <i class="fa fa-share"></i>
+                        <span>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                <div class="team-item p-4">
+                    <div class="overflow-hidden mb-4">
+                        <img class="img-fluid" src="img/team-3.jpg" alt="Secrétaire Général de l'OPEECI">
+                    </div>
+                    <h5 class="mb-0">Nom du Secrétaire Général</h5>
+                    <p>Secrétaire Général</p>
+                    <div class="btn-slide mt-1">
+                        <i class="fa fa-share"></i>
+                        <span>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.9s">
+                <div class="team-item p-4">
+                    <div class="overflow-hidden mb-4">
+                        <img class="img-fluid" src="img/team-4.jpg" alt="Trésorier de l'OPEECI">
+                    </div>
+                    <h5 class="mb-0">Nom du Trésorier</h5>
+                    <p>Trésorier</p>
+                    <div class="btn-slide mt-1">
+                        <i class="fa fa-share"></i>
+                        <span>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Équipe End -->
+
+
+
+<!-- Témoignages Start -->
+<div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s" style="margin-top: -50px">
+    <div class="container py-5">
+        <div class="text-center">
+            <h6 class="text-secondary text-uppercase">Témoignages</h6>
+            <h1 class="mb-0">Ce que disent nos membres !</h1>
+        </div>
+        <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+            <div class="testimonial-item p-4 my-5">
+                <i class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"></i>
+                <div class="d-flex align-items-end mb-4">
+                    <img class="img-fluid flex-shrink-0" src="img/testimonial-1.jpg" style="width: 80px; height: 80px;">
+                    <div class="ms-4">
+                        <h5 class="mb-1">Nom du Membre</h5>
+                        <p class="m-0">Parent d'élève</p>
+                    </div>
+                </div>
+                <p class="mb-0">"L'OPEECI m'a aidé à mieux comprendre le système éducatif et à soutenir mon enfant dans ses études."</p>
+            </div>
+            <div class="testimonial-item p-4 my-5">
+                <i class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"></i>
+                <div class="d-flex align-items-end mb-4">
+                    <img class="img-fluid flex-shrink-0" src="img/testimonial-2.jpg" style="width: 80px; height: 80px;">
+                    <div class="ms-4">
+                        <h5 class="mb-1">Nom du Membre</h5>
+                        <p class="m-0">Étudiant</p>
+                    </div>
+                </div>
+                <p class="mb-0">"Grâce à l'association, j'ai pu participer à des ateliers qui m'ont beaucoup aidé dans mes études."</p>
+            </div>
+            <div class="testimonial-item p-4 my-5">
+                <i class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"></i>
+                <div class="d-flex align-items-end mb-4">
+                    <img class="img-fluid flex-shrink-0" src="img/testimonial-3.jpg" style="width: 80px; height: 80px;">
+                    <div class="ms-4">
+                        <h5 class="mb-1">Nom du Membre</h5>
+                        <p class="m-0">Enseignant</p>
+                    </div>
+                </div>
+                <p class="mb-0">"L'OPEECI est une plateforme essentielle pour renforcer la collaboration entre les parents et les enseignants."</p>
+            </div>
+            <div class="testimonial-item p-4 my-5">
+                <i class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"></i>
+                <div class="d-flex align-items-end mb-4">
+                    <img class="img-fluid flex-shrink-0" src="img/testimonial-4.jpg" style="width: 80px; height: 80px;">
+                    <div class="ms-4">
+                        <h5 class="mb-1">Nom du Partenaire</h5>
+                        <p class="m-0">Partenaire Local</p>
+                    </div>
+                </div>
+                <p class="mb-0">"Collaborer avec l'OPEECI nous permet de soutenir activement l'éducation en Côte d'Ivoire."</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Témoignages End -->
+
+
+
+    <!-- Footer Start -->
+<div class="container-fluid bg-dark text-light footer pt-5 wow fadeIn" data-wow-delay="0.1s" style="margin-top: 6rem;">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-light mb-4">Adresse</h4>
+                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Abidjan, Côte d'Ivoire</p>
+                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+225 00 00 00 00</p>
+                <p class="mb-2"><i class="fa fa-envelope me-3"></i>opeeciopeeci@gmail.com</p>
+                <div class="d-flex pt-2">
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/Aka.claude12?mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-light mb-4">Nos Actions</h4>
+                <a class="btn btn-link" href="">Soutien Scolaire</a>
+                <a class="btn btn-link" href="">Conférences et Ateliers</a>
+                <a class="btn btn-link" href="">Événements</a>
+                <a class="btn btn-link" href="">Solutions Communautaires</a>
+                <a class="btn btn-link" href="">Partenariats</a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-light mb-4">Liens Utiles</h4>
+                <a class="btn btn-link" href="vision.html">À propos de nous</a>
+                <a class="btn btn-link" href="contact.html">Contactez-nous</a>
+                <a class="btn btn-link" href="">Nos Actions</a>
+                <a class="btn btn-link" href="">Conditions d'utilisation</a>
+                <a class="btn btn-link" href="">Support</a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-light mb-4">Bulletin d'Information</h4>
+                <p>Restez informé sur nos dernières actualités et événements.</p>
+                <div class="position-relative mx-auto" style="max-width: 400px;">
+                    <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Votre email">
+                    <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">S'inscrire</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="copyright">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="border-bottom" href="#">OPEECI</a>, Tous droits réservés.
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                    Conçu par <a class="border-bottom" href="https://htmlcodex.com">Ismael Bakayoko</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
